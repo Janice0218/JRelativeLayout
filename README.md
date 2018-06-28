@@ -2,8 +2,10 @@
 A Relative layout for JFrame just like the one you have in Android  
 Since this is the first version , expect improvements soon
 Feedbacks are appreciated...
-
-Documentation:
+## Usage
+1)download the java file and import it to your project
+2)create its constructor in your file
+## Documentation:
 public class JRelativeLayout {
     
     public JRelativeLayout(JFrame n ,int width,int height) {
