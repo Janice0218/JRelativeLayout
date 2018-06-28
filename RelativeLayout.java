@@ -1,27 +1,18 @@
-package advanced;
-
-
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import javax.swing.*;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /**
  *
  * @author Mohit Agarwal
  */
-public class RelativeLayout {
+public class JRelativeLayout {
      JFrame n;
      int padd;
      int margin;
      int width,height;
 
-    public RelativeLayout(JFrame n ,int width,int height) {
+    public JRelativeLayout(JFrame n ,int width,int height) {
       this.n=n;
      padd=20;
      margin=20;
@@ -51,7 +42,7 @@ public class RelativeLayout {
         });
     }
 
-    public RelativeLayout(JFrame n, int padd, int margin, int width, int height) {
+    public JRelativeLayout(JFrame n, int padd, int margin, int width, int height) {
         this.n = n;
         this.padd = padd;
         this.margin = margin;
