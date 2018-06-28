@@ -85,14 +85,14 @@ public class JRelativeLayout {
     
     public void toRight(JComponent o1,JComponent o2,int w,int h)
     {
-        int x=o1.getX()+o1.getWidth()+50;
+        int x=o1.getX()+o1.getWidth()+margin;
         int y=o1.getY();
         n.add(o2);
         o2.setBounds(x, y, w, h);
     }
      public void toLeft(JComponent o1,JComponent o2,int w,int h)
     {
-        int x=o1.getX()-50-w;
+        int x=o1.getX()-margin-w;
         if(x<0)
             x=0;
         int y=o1.getY();
@@ -102,14 +102,14 @@ public class JRelativeLayout {
       public void above(JComponent o1,JComponent o2,int w,int h)
     {
         int x=(o2.getX()==0?o1.getX():o2.getX());
-        int y=o1.getY()-h-20;
+        int y=o1.getY()-h-margin;
         n.add(o2);
         o2.setBounds(x, y, w, h);
     }
        public void below(JComponent o1,JComponent o2,int w,int h)
     {
         int x=(o2.getX()==0?o1.getX():o2.getX());
-        int y=o1.getY()+o1.getHeight()+20;
+        int y=o1.getY()+o1.getHeight()+margin;
         n.add(o2);
         o2.setBounds(x, y, w, h);
     }
@@ -129,10 +129,5 @@ public class JRelativeLayout {
            o1.setBounds((width/2)-(w/2), padd, w, h);
            n.add(o1);
        }
-      
-       public void Top(JComponent o1,int x,int w,int h)
-       {
-           o1.setBounds(x, padd, w, h);
-           n.add(o1);
-       }
+     
 }
